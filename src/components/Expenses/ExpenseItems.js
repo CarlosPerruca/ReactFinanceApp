@@ -11,6 +11,13 @@ const ExpenseItems = (props) => {
         <h2>{props.title}</h2>
         <div className="expense-item__price">{props.amount}€</div>
       </div>
+      <button
+        onClick={function clic() {
+          console.log("me han cliqueado qué feliz ^^");
+        }}
+      >
+        Change Title
+      </button>
     </Card>
   );
 };
