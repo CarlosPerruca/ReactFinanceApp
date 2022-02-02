@@ -8,10 +8,11 @@ import "./ExpenseItems.css";
 const ExpenseItems = (props) => {
   const [title, setTitle] = useState(props.title);
 
-  function clickHandler() {
+  // function clickHandler () {...
+  const clickHandler = () => {
     setTitle("Updated!");
-    console.log(title);
-  }
+    console.log(`El ${title} ha cambiado su nombre a 'Updated'!`);
+  };
 
   return (
     <Card className="expense-item">
